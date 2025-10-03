@@ -1,3 +1,7 @@
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
 
 .weather-container {
   max-width: 800px;
