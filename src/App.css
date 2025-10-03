@@ -103,13 +103,20 @@
 .weather-card .main {
   font-size: 2.4rem;
   margin: 10px 0;
-  font-weight: 800;
   position: relative;
   z-index: 1;
   text-shadow: 0 4px 16px #00c6ff44;
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
   letter-spacing: 2px;
   transition: color 0.3s, text-shadow 0.3s;
+}
+.weather-card .icon {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+.weather-card:hover .icon {
+  transform: translateY(-8px) scale(1.1);
 }
 .weather-card p {
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
@@ -119,11 +126,6 @@
   color: #222;
   text-shadow: 0 1px 4px #4facfe22;
   transition: color 0.3s, text-shadow 0.3s;
-}
-.weather-card .icon {
-  font-size: 2.3rem;
-  margin-bottom: 10px;
-  animation: bounce 1.2s infinite alternate;
 }
 .weather-card .weather-icon {
   width: 80px;
@@ -135,10 +137,6 @@
   box-shadow: 0 2px 8px #4facfe33;
   padding: 6px;
 }
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
-}
 
 .weather-container h1 {
   font-size: 3rem;
@@ -149,4 +147,3 @@
   letter-spacing: 2px;
   text-shadow: 0 2px 8px #4facfe22;
 }
-
