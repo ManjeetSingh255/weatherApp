@@ -283,7 +283,7 @@ function Weather() {
       )}
 
       <div className="footer">
-        Powered by OpenWeatherMap • Built with React
+        Powered by WeatherNow • Built by Manjeet Singh
       </div>
     </div>
   );
